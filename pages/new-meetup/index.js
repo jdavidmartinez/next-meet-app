@@ -10,7 +10,7 @@ const router = useRouter();
     const response = await fetch('/api/new-meetup', {
       method: 'POST',
       body: JSON.stringify(enteredMeetupData),
-      header: {
+      headers: {
         'Content-Type': 'application/json'
       }
     });
